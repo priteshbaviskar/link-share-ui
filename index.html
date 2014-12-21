@@ -23,7 +23,7 @@
     <div class="card animated bounceInUp _1" >
    <h3 class="card-heading simple">Simple News blah</h3>
    <div class="card-body">
-      <video id="video"  autoplay></video>
+      <video id="video"  height=""autoplay></video>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
       
      <!-- <button onclick="capturePhoto();">Capture Photo</button> <br> -->
@@ -50,7 +50,8 @@
       
     <script type="text/javascript" charset="utf-8">
       function onLoad() {
-          onDeviceReady();
+        MediaStreamTrack.getSources(gotSources);
+          
       }
     </script>
   </body>
